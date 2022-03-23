@@ -1,45 +1,29 @@
 {
-
-    "name": "Telegram Album Bot",
-
-    "description": "A Telegram Album Creator Bot By @foryoubbs",
-
+    "name": "Telegram Files Store Bot",
+    "description": "A Telegram Files Store Bot in Pyrogram by @AbirHasan2005",
     "keywords": [
-
         "telegram",
-
         "files",
-
         "store",
-
         "bot"
-
     ],
-
-    "repository": "https://github.com/lullaby23/fwdtb/",
-
-    "website": "https://telegram.dog/foryoubbs",
-
-    "success_url": "https://t.me/fybadmin",
-
+    "repository": "https://github.com/AbirHasan2005/PyroFilesStoreBot",
+    "website": "https://telegram.dog/AbirHasan2005",
+    "success_url": "https://t.me/Discovery_Updates",
     "env": {
-
-        "BOT_TOKEN": {
-
-            "description": "Dapatkan Token Dari @botfather :)"
-
+        "TOKEN": {
+            "description": "Get this from @BotFather XD"
         }
-
     },
-
-  "buildpacks": [
-
-    {
-
-      "url": "heroku/indexjs"
-
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
     }
-
-  ]
-
 }
